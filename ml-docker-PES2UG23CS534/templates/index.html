@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detection ML App</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: rgba(128, 0, 128, 0.349);">PES2UG23CS534</h1>
+    <h2>Spam Detection using ML (Dockerized)</h2>
+
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter message" size="45" required>
+        <br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <h3>Prediction: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
+
